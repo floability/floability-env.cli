@@ -1,0 +1,353 @@
+2025/03/06 11:29:07.70 vine_manager[1136664]tcp: listening on port 9123
+2025/03/06 17:29:07.70 vine_manager[1136664]vine: manager start
+2025/03/06 17:29:07.70 vine_manager[1136664]vine: Using default disconnect slow workers factor for 'default'.
+2025/03/06 17:29:07.70 vine_manager[1136664]vine: workers connections -- known: 0, connecting: 0
+2025/03/06 17:29:07.70 vine_manager[1136664]vine: log enabled and is being written to performance
+2025/03/06 17:29:07.70 vine_manager[1136664]vine: transactions log enabled and is being written to transactions
+2025/03/06 17:29:07.70 vine_manager[1136664]vine: graph log enabled and is being written to taskgraph
+2025/03/06 17:29:07.70 vine_manager[1136664]vine: workers connections -- known: 0, connecting: 0
+2025/03/06 17:29:07.70 vine_manager[1136664]vine: Manager is listening on port 9123.
+2025/03/06 17:29:10.60 vine_manager[1136664]vine: Task 1 state change: INITIAL (0) to READY (1)
+2025/03/06 17:29:10.63 vine_manager[1136664]vine: Task 2 state change: INITIAL (0) to READY (1)
+2025/03/06 17:29:10.65 vine_manager[1136664]vine: Task 3 state change: INITIAL (0) to READY (1)
+2025/03/06 17:29:10.68 vine_manager[1136664]vine: Task 4 state change: INITIAL (0) to READY (1)
+2025/03/06 17:29:10.68 vine_manager[1136664]debug: warning: this taskvine manager is visible to the public.
+2025/03/06 17:29:10.68 vine_manager[1136664]debug: warning: you should set a password with the --password option.
+2025/03/06 17:29:10.68 vine_manager[1136664]debug: warning: using plain-text when communicating with workers.
+2025/03/06 17:29:10.68 vine_manager[1136664]debug: warning: use encryption with a key and cert when creating the manager.
+2025/03/06 17:29:10.68 vine_manager[1136664]vine: Advertising manager status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2025/03/06 17:29:10.68 vine_manager[1136664]debug: compressed update message from 2687 to 920 bytes
+2025/03/06 17:29:10.68 vine_manager[1136664]dns: looking up name catalog.cse.nd.edu
+2025/03/06 17:29:10.68 vine_manager[1136664]dns: catalog.cse.nd.edu is 129.74.152.177
+2025/03/06 17:29:10.69 vine_manager[1136664]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098 (background pid 1136726)
+2025/03/06 17:29:10.69 vine_manager[1136727]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098
+2025/03/06 17:29:10.69 vine_manager[1136727]tcp: connecting to 129.74.152.177 port 9098
+2025/03/06 17:29:10.70 vine_manager[1136664]dns: looking up name backup-catalog.cse.nd.edu
+2025/03/06 17:29:10.70 vine_manager[1136664]dns: backup-catalog.cse.nd.edu is 129.74.247.43
+2025/03/06 17:29:10.70 vine_manager[1136664]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098 (background pid 1136728)
+2025/03/06 17:29:10.70 vine_manager[1136727]tcp: made connection to 129.74.152.177 port 9098
+2025/03/06 17:29:10.70 vine_manager[1136727]tcp: disconnected from 129.74.152.177 port 9098
+2025/03/06 17:29:10.71 vine_manager[1136729]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098
+2025/03/06 17:29:10.71 vine_manager[1136729]tcp: connecting to 129.74.247.43 port 9098
+2025/03/06 17:29:10.72 vine_manager[1136729]tcp: made connection to 129.74.247.43 port 9098
+2025/03/06 17:29:10.72 vine_manager[1136729]tcp: disconnected from 129.74.247.43 port 9098
+2025/03/06 17:30:06.90 vine_manager[1136664]tcp: accepted connection from 140.192.249.43 port 46586
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: worker 140.192.249.43:46586 connected
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: rx from unknown (140.192.249.43:46586): taskvine 12 moaz-OptiPlex-7010 Linux x86_64 7.14.6
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: 1 workers are connected in total now
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) running CCTools version 7.14.6 on Linux (operating system) with architecture x86_64 is ready
+2025/03/06 17:30:06.90 vine_manager[1136664]debug: Warning: potential worker version mismatch: worker moaz-OptiPlex-7010 (140.192.249.43:46586) is version 7.14.6, and manager is version 7.14.5 FINAL
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): info worker-id worker-df1586ad6a099e0639a4c2374c9a968f
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): transfer-port 1024
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): info worker-end-time 0
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): alive
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): resources
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: cores 4
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: memory 1024
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: disk 2000
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: gpus 0
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: workers 1
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: tag 0
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: end
+2025/03/06 17:30:06.90 vine_manager[1136664]vine: task 2 has a ready transfer source for all files
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) needs file /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/py_wrapper_1 as w_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): put file-meta-fc679e733e253e13c1d055e983f289c1 1 487
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): file file-meta-fc679e733e253e13c1d055e983f289c1 487 0664 1741282150
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) received 0.00 MB in 0.00s (4.35s MB/s) average 4.35s MB/s
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) needs buffer as f_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): put buffer-rnd-wmvxgxlorktwrvc 1 79
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): file buffer-rnd-wmvxgxlorktwrvc 79 0755 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) received 0.00 MB in 0.00s (1.68s MB/s) average 3.56s MB/s
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) needs file /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/arguments/72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 as a_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): put file-meta-d1f09459b77c1876c5df50ea4fffb9d9 0 596725
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): file file-meta-d1f09459b77c1876c5df50ea4fffb9d9 596725 0664 1741282150
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) received 0.60 MB in 0.00s (1510.70s MB/s) average 1078.14s MB/s
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): task 2
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): cmd 163
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: python3 w_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 f_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 a_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 o_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): category subgraph_callable-a9eafe9ba9a8e792f00b8356c1377c2a
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): cores 1.000
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): gpus 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): memory 256
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): disk 375
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile file-meta-fc679e733e253e13c1d055e983f289c1 w_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile buffer-rnd-wmvxgxlorktwrvc f_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile file-meta-d1f09459b77c1876c5df50ea4fffb9d9 a_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): outfile file-rnd-fjsuenecoykxfor o_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): end
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) busy on 'python3 w_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 f_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 a_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 o_72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63'
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: Task 2 state change: READY (1) to RUNNING (2)
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: workers connections -- known: 1, connecting: 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: task 3 has a ready transfer source for all files
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) needs file /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/arguments/a46cd137-042f-4151-967d-b833417786fc as a_a46cd137-042f-4151-967d-b833417786fc
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): put file-meta-c2e1d803a76514d8489865553b719f17 0 572093
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): file file-meta-c2e1d803a76514d8489865553b719f17 572093 0664 1741282150
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) received 0.57 MB in 0.00s (3075.77s MB/s) average 1580.25s MB/s
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): task 3
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): cmd 163
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: python3 w_a46cd137-042f-4151-967d-b833417786fc f_a46cd137-042f-4151-967d-b833417786fc a_a46cd137-042f-4151-967d-b833417786fc o_a46cd137-042f-4151-967d-b833417786fc
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): category subgraph_callable-c1e4a4f73795b11fe35049bb06102a2d
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): cores 1.000
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): gpus 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): memory 256
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): disk 304
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile file-meta-fc679e733e253e13c1d055e983f289c1 w_a46cd137-042f-4151-967d-b833417786fc 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile buffer-rnd-wmvxgxlorktwrvc f_a46cd137-042f-4151-967d-b833417786fc 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile file-meta-c2e1d803a76514d8489865553b719f17 a_a46cd137-042f-4151-967d-b833417786fc 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): outfile file-rnd-vskedhlljrgoxmw o_a46cd137-042f-4151-967d-b833417786fc 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): end
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) busy on 'python3 w_a46cd137-042f-4151-967d-b833417786fc f_a46cd137-042f-4151-967d-b833417786fc a_a46cd137-042f-4151-967d-b833417786fc o_a46cd137-042f-4151-967d-b833417786fc'
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: Task 3 state change: READY (1) to RUNNING (2)
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: task 4 has a ready transfer source for all files
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) needs file /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/arguments/02abc984-05a7-4aa1-b247-ce7ddd7c49b1 as a_02abc984-05a7-4aa1-b247-ce7ddd7c49b1
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): put file-meta-1e7ca475ef56c874e6f52ccb91394a71 0 572095
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): file file-meta-1e7ca475ef56c874e6f52ccb91394a71 572095 0664 1741282150
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) received 0.57 MB in 0.00s (3075.78s MB/s) average 1880.65s MB/s
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): task 4
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): cmd 163
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: python3 w_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 f_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 a_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 o_02abc984-05a7-4aa1-b247-ce7ddd7c49b1
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): category subgraph_callable-c1e4a4f73795b11fe35049bb06102a2d
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): cores 1.000
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): gpus 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): memory 256
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): disk 248
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile file-meta-fc679e733e253e13c1d055e983f289c1 w_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile buffer-rnd-wmvxgxlorktwrvc f_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile file-meta-1e7ca475ef56c874e6f52ccb91394a71 a_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): outfile file-rnd-jynflzzdrgjgvxc o_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): end
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) busy on 'python3 w_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 f_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 a_02abc984-05a7-4aa1-b247-ce7ddd7c49b1 o_02abc984-05a7-4aa1-b247-ce7ddd7c49b1'
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: Task 4 state change: READY (1) to RUNNING (2)
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: task 1 has a ready transfer source for all files
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) needs file /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/arguments/be814f49-34bf-4df4-870d-20840d795b59 as a_be814f49-34bf-4df4-870d-20840d795b59
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): put file-meta-378c8e6bb78e989bcf20e4870666410a 0 596725
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): file file-meta-378c8e6bb78e989bcf20e4870666410a 596725 0664 1741282150
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) received 0.60 MB in 0.00s (3060.13s MB/s) average 2085.82s MB/s
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): task 1
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): cmd 163
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: python3 w_be814f49-34bf-4df4-870d-20840d795b59 f_be814f49-34bf-4df4-870d-20840d795b59 a_be814f49-34bf-4df4-870d-20840d795b59 o_be814f49-34bf-4df4-870d-20840d795b59
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): category subgraph_callable-a9eafe9ba9a8e792f00b8356c1377c2a
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): cores 1.000
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): gpus 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): memory 256
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): disk 201
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile file-meta-fc679e733e253e13c1d055e983f289c1 w_be814f49-34bf-4df4-870d-20840d795b59 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile buffer-rnd-wmvxgxlorktwrvc f_be814f49-34bf-4df4-870d-20840d795b59 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): infile file-meta-378c8e6bb78e989bcf20e4870666410a a_be814f49-34bf-4df4-870d-20840d795b59 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): outfile file-rnd-txuepsperkfdksi o_be814f49-34bf-4df4-870d-20840d795b59 0
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): end
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) busy on 'python3 w_be814f49-34bf-4df4-870d-20840d795b59 f_be814f49-34bf-4df4-870d-20840d795b59 a_be814f49-34bf-4df4-870d-20840d795b59 o_be814f49-34bf-4df4-870d-20840d795b59'
+2025/03/06 17:30:06.91 vine_manager[1136664]vine: Task 1 state change: READY (1) to RUNNING (2)
+2025/03/06 17:30:06.93 vine_manager[1136664]tcp: accepted connection from 140.192.249.43 port 46594
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: worker 140.192.249.43:46594 connected
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: rx from unknown (140.192.249.43:46594): taskvine 12 moaz-OptiPlex-7010 Linux x86_64 7.14.6
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: 2 workers are connected in total now
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46594) running CCTools version 7.14.6 on Linux (operating system) with architecture x86_64 is ready
+2025/03/06 17:30:06.93 vine_manager[1136664]debug: Warning: potential worker version mismatch: worker moaz-OptiPlex-7010 (140.192.249.43:46594) is version 7.14.6, and manager is version 7.14.5 FINAL
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46594): info worker-id worker-63da28dd1200ac13e210e99d0ea1c0b5
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46594): transfer-port 1025
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46594): info worker-end-time 0
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46594): alive
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46594): resources
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: cores 4
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: memory 1024
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: disk 2000
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: gpus 0
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: workers 1
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: tag 0
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: end
+2025/03/06 17:30:06.93 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): info tasks_running 1
+2025/03/06 17:30:06.97 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): info tasks_running 2
+2025/03/06 17:30:06.99 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): info tasks_running 3
+2025/03/06 17:30:07.03 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): info tasks_running 4
+2025/03/06 17:30:10.03 vine_manager[1136664]vine: workers connections -- known: 2, connecting: 0
+2025/03/06 17:30:10.03 vine_manager[1136664]vine: Advertising manager status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2025/03/06 17:30:10.03 vine_manager[1136664]debug: compressed update message from 2742 to 981 bytes
+2025/03/06 17:30:10.04 vine_manager[1136664]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098 (background pid 1136789)
+2025/03/06 17:30:10.04 vine_manager[1136790]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098
+2025/03/06 17:30:10.04 vine_manager[1136790]tcp: connecting to 129.74.152.177 port 9098
+2025/03/06 17:30:10.05 vine_manager[1136790]tcp: made connection to 129.74.152.177 port 9098
+2025/03/06 17:30:10.05 vine_manager[1136790]tcp: disconnected from 129.74.152.177 port 9098
+2025/03/06 17:30:10.06 vine_manager[1136664]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098 (background pid 1136791)
+2025/03/06 17:30:10.06 vine_manager[1136792]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098
+2025/03/06 17:30:10.06 vine_manager[1136792]tcp: connecting to 129.74.247.43 port 9098
+2025/03/06 17:30:10.07 vine_manager[1136792]tcp: made connection to 129.74.247.43 port 9098
+2025/03/06 17:30:10.07 vine_manager[1136792]tcp: disconnected from 129.74.247.43 port 9098
+2025/03/06 17:30:16.84 vine_manager[1136664]tcp: accepted connection from 140.192.249.43 port 49784
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: worker 140.192.249.43:49784 connected
+2025/03/06 17:30:16.84 vine_manager[1136664]tcp: accepted connection from 140.192.249.43 port 49794
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: worker 140.192.249.43:49794 connected
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from unknown (140.192.249.43:49784): taskvine 12 moaz-OptiPlex-7010 Linux x86_64 7.14.6
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: 3 workers are connected in total now
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:49784) running CCTools version 7.14.6 on Linux (operating system) with architecture x86_64 is ready
+2025/03/06 17:30:16.84 vine_manager[1136664]debug: Warning: potential worker version mismatch: worker moaz-OptiPlex-7010 (140.192.249.43:49784) is version 7.14.6, and manager is version 7.14.5 FINAL
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from unknown (140.192.249.43:49794): taskvine 12 moaz-OptiPlex-7010 Linux x86_64 7.14.6
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: 4 workers are connected in total now
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:49794) running CCTools version 7.14.6 on Linux (operating system) with architecture x86_64 is ready
+2025/03/06 17:30:16.84 vine_manager[1136664]debug: Warning: potential worker version mismatch: worker moaz-OptiPlex-7010 (140.192.249.43:49794) is version 7.14.6, and manager is version 7.14.5 FINAL
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49794): info worker-id worker-2fbadc9d56d16c0312e6ee8f2161f3f8
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49794): transfer-port 1027
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49784): info worker-id worker-4ade34cffce7a95c641879bfb532132c
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49784): transfer-port 1026
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49784): info worker-end-time 0
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49784): alive
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49784): resources
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: cores 4
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: memory 1024
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: disk 2000
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: gpus 0
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: workers 1
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: tag 0
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: end
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49794): info worker-end-time 0
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49794): alive
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:49794): resources
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: cores 4
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: memory 1024
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: disk 2000
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: gpus 0
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: workers 1
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: tag 0
+2025/03/06 17:30:16.84 vine_manager[1136664]vine: end
+2025/03/06 17:30:20.84 vine_manager[1136664]vine: workers connections -- known: 4, connecting: 0
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): cache-update file-rnd-vskedhlljrgoxmw 1 0 24639 33204 25688089 1741282206975202 X
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): cache-update file-rnd-fjsuenecoykxfor 1 0 26358 33204 25726258 1741282206937241 X
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): complete 0 0 1238 0 1741282206937241 1741282232663499 2
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 2 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: workers connections -- known: 4, connecting: 0
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): complete 0 0 1238 0 1741282206975202 1741282232663291 3
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 3 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): send_stdout 2
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): stdout 2 1238
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Receiving stdout of task 2 (size: 1238 bytes) from 140.192.249.43:46586 (moaz-OptiPlex-7010) ...
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Retrieved 1238 bytes from moaz-OptiPlex-7010 (140.192.249.43:46586)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) sending back file-rnd-fjsuenecoykxfor to /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/outputs/72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): get file-rnd-fjsuenecoykxfor
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): file file-rnd-fjsuenecoykxfor 26358 0664 1741282231
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Receiving file /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/outputs/72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 (size: 26358 bytes) from 140.192.249.43:46586 (moaz-OptiPlex-7010) ...
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) sent 0.03 MB in 0.00s (88.45s MB/s) average 1666.36s MB/s
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink file-meta-d1f09459b77c1876c5df50ea4fffb9d9
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): kill 2
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 2 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) done in 25.75s total tasks 1 average 25.73s
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): send_stdout 3
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): stdout 3 1238
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Receiving stdout of task 3 (size: 1238 bytes) from 140.192.249.43:46586 (moaz-OptiPlex-7010) ...
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Retrieved 1238 bytes from moaz-OptiPlex-7010 (140.192.249.43:46586)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) sending back file-rnd-vskedhlljrgoxmw to /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/outputs/a46cd137-042f-4151-967d-b833417786fc
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): get file-rnd-vskedhlljrgoxmw
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): file file-rnd-vskedhlljrgoxmw 24639 0664 1741282231
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Receiving file /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/outputs/a46cd137-042f-4151-967d-b833417786fc (size: 24639 bytes) from 140.192.249.43:46586 (moaz-OptiPlex-7010) ...
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) sent 0.02 MB in 0.00s (95.50s MB/s) average 1424.69s MB/s
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink file-meta-c2e1d803a76514d8489865553b719f17
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): kill 3
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 3 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) done in 25.75s total tasks 2 average 25.71s
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 3 state change: RETRIEVED (4) to DONE (5)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: workers connections -- known: 4, connecting: 0
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: vine_file_delete: deleting /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/arguments/a46cd137-042f-4151-967d-b833417786fc on reference count took: 0.000s
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 2 state change: RETRIEVED (4) to DONE (5)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: workers connections -- known: 4, connecting: 0
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: vine_file_delete: deleting /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/arguments/72e9d3a6-46e3-4200-a4d4-f88cbd3a0e63 on reference count took: 0.000s
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): cache-update file-rnd-jynflzzdrgjgvxc 1 0 24639 33204 25672371 1741282206995300 X
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): complete 0 0 1238 0 1741282206995300 1741282232667671 4
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 4 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): send_stdout 4
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): stdout 4 1238
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Receiving stdout of task 4 (size: 1238 bytes) from 140.192.249.43:46586 (moaz-OptiPlex-7010) ...
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Retrieved 1238 bytes from moaz-OptiPlex-7010 (140.192.249.43:46586)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) sending back file-rnd-jynflzzdrgjgvxc to /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/outputs/02abc984-05a7-4aa1-b247-ce7ddd7c49b1
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): get file-rnd-jynflzzdrgjgvxc
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): file file-rnd-jynflzzdrgjgvxc 24639 0664 1741282231
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Receiving file /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/outputs/02abc984-05a7-4aa1-b247-ce7ddd7c49b1 (size: 24639 bytes) from 140.192.249.43:46586 (moaz-OptiPlex-7010) ...
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) sent 0.02 MB in 0.00s (127.01s MB/s) average 1290.13s MB/s
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink file-meta-1e7ca475ef56c874e6f52ccb91394a71
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): kill 4
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 4 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) done in 25.76s total tasks 3 average 25.70s
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 4 state change: RETRIEVED (4) to DONE (5)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: workers connections -- known: 4, connecting: 0
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: vine_file_delete: deleting /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/arguments/02abc984-05a7-4aa1-b247-ce7ddd7c49b1 on reference count took: 0.000s
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): cache-update file-rnd-txuepsperkfdksi 1 0 26341 33204 25638200 1741282207031386 X
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): complete 0 0 1238 0 1741282207031386 1741282232669586 1
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Task 1 state change: RUNNING (2) to WAITING_RETRIEVAL (3)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): send_stdout 1
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): stdout 1 1238
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Receiving stdout of task 1 (size: 1238 bytes) from 140.192.249.43:46586 (moaz-OptiPlex-7010) ...
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: Retrieved 1238 bytes from moaz-OptiPlex-7010 (140.192.249.43:46586)
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) sending back file-rnd-txuepsperkfdksi to /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/outputs/be814f49-34bf-4df4-870d-20840d795b59
+2025/03/06 17:30:32.66 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): get file-rnd-txuepsperkfdksi
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: rx from moaz-OptiPlex-7010 (140.192.249.43:46586): file file-rnd-txuepsperkfdksi 26341 0664 1741282231
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: Receiving file /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/outputs/be814f49-34bf-4df4-870d-20840d795b59 (size: 26341 bytes) from 140.192.249.43:46586 (moaz-OptiPlex-7010) ...
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) sent 0.03 MB in 0.00s (106.64s MB/s) average 1152.12s MB/s
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink file-meta-378c8e6bb78e989bcf20e4870666410a
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): kill 1
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: Task 1 state change: WAITING_RETRIEVAL (3) to RETRIEVED (4)
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: moaz-OptiPlex-7010 (140.192.249.43:46586) done in 25.76s total tasks 4 average 25.68s
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: Task 1 state change: RETRIEVED (4) to DONE (5)
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: workers connections -- known: 4, connecting: 0
+2025/03/06 17:30:32.67 vine_manager[1136664]vine: vine_file_delete: deleting /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging/arguments/be814f49-34bf-4df4-870d-20840d795b59 on reference count took: 0.000s
+2025/03/06 17:30:32.70 vine_manager[1136664]vine: Advertising manager status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2025/03/06 17:30:32.70 vine_manager[1136664]debug: compressed update message from 2770 to 989 bytes
+2025/03/06 17:30:32.71 vine_manager[1136664]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098 (background pid 1136842)
+2025/03/06 17:30:32.72 vine_manager[1136843]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098
+2025/03/06 17:30:32.72 vine_manager[1136843]tcp: connecting to 129.74.152.177 port 9098
+2025/03/06 17:30:32.73 vine_manager[1136843]tcp: made connection to 129.74.152.177 port 9098
+2025/03/06 17:30:32.73 vine_manager[1136843]tcp: disconnected from 129.74.152.177 port 9098
+2025/03/06 17:30:32.73 vine_manager[1136664]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098 (background pid 1136844)
+2025/03/06 17:30:32.73 vine_manager[1136845]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098
+2025/03/06 17:30:32.73 vine_manager[1136845]tcp: connecting to 129.74.247.43 port 9098
+2025/03/06 17:30:32.74 vine_manager[1136845]tcp: made connection to 129.74.247.43 port 9098
+2025/03/06 17:30:32.74 vine_manager[1136845]tcp: disconnected from 129.74.247.43 port 9098
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:49784): release
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: worker moaz-OptiPlex-7010 (140.192.249.43:49784) removed
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: Removing instances of worker from transfer table
+2025/03/06 18:12:47.82 vine_manager[1136664]tcp: disconnected from 140.192.249.43 port 49784
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: 3 workers connected in total now
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): release
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: worker moaz-OptiPlex-7010 (140.192.249.43:46586) removed
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: Removing instances of worker from transfer table
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink file-rnd-jynflzzdrgjgvxc
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink file-rnd-fjsuenecoykxfor
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink file-meta-fc679e733e253e13c1d055e983f289c1
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink file-rnd-txuepsperkfdksi
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink file-rnd-vskedhlljrgoxmw
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46586): unlink buffer-rnd-wmvxgxlorktwrvc
+2025/03/06 18:12:47.82 vine_manager[1136664]tcp: disconnected from 140.192.249.43 port 46586
+2025/03/06 18:12:47.82 vine_manager[1136664]vine: 2 workers connected in total now
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:46594): release
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: worker moaz-OptiPlex-7010 (140.192.249.43:46594) removed
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: Removing instances of worker from transfer table
+2025/03/06 18:12:47.83 vine_manager[1136664]tcp: disconnected from 140.192.249.43 port 46594
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: 1 workers connected in total now
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: tx to moaz-OptiPlex-7010 (140.192.249.43:49794): release
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: worker moaz-OptiPlex-7010 (140.192.249.43:49794) removed
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: Removing instances of worker from transfer table
+2025/03/06 18:12:47.83 vine_manager[1136664]tcp: disconnected from 140.192.249.43 port 49794
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: 0 workers connected in total now
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: workers connections -- known: 0, connecting: 0
+2025/03/06 18:12:47.83 vine_manager[1136664]vine: Advertising manager status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2025/03/06 18:12:47.83 vine_manager[1136664]debug: compressed update message from 2747 to 973 bytes
+2025/03/06 18:12:47.83 vine_manager[1136664]dns: looking up name catalog.cse.nd.edu
+2025/03/06 18:12:47.83 vine_manager[1136664]dns: catalog.cse.nd.edu is 129.74.152.177
+2025/03/06 18:12:47.84 vine_manager[1136664]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098 (background pid 1138130)
+2025/03/06 18:12:47.85 vine_manager[1138131]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098
+2025/03/06 18:12:47.85 vine_manager[1138131]tcp: connecting to 129.74.152.177 port 9098
+2025/03/06 18:12:47.86 vine_manager[1136664]dns: looking up name backup-catalog.cse.nd.edu
+2025/03/06 18:12:47.86 vine_manager[1138131]tcp: made connection to 129.74.152.177 port 9098
+2025/03/06 18:12:47.86 vine_manager[1136664]dns: backup-catalog.cse.nd.edu is 129.74.247.43
+2025/03/06 18:12:47.86 vine_manager[1138131]tcp: disconnected from 129.74.152.177 port 9098
+2025/03/06 18:12:47.87 vine_manager[1136664]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098 (background pid 1138132)
+2025/03/06 18:12:47.88 vine_manager[1138133]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098
+2025/03/06 18:12:47.88 vine_manager[1138133]tcp: connecting to 129.74.247.43 port 9098
+2025/03/06 18:12:47.89 vine_manager[1138133]tcp: made connection to 129.74.247.43 port 9098
+2025/03/06 18:12:47.89 vine_manager[1138133]tcp: disconnected from 129.74.247.43 port 9098
+2025/03/06 18:12:47.89 vine_manager[1136664]vine: deleting /home/admin/shahadat/floability-cli/example/cms-physics-dv5/workflow/vine-run-info/2025-03-06T112907/staging
+2025/03/06 18:12:47.91 vine_manager[1136664]vine:   object  created   ref_added  deleted
+2025/03/06 18:12:47.91 vine_manager[1136664]vine: -----------------------------------
+2025/03/06 18:12:47.91 vine_manager[1136664]vine:    tasks       20        4       24 ok
+2025/03/06 18:12:47.91 vine_manager[1136664]vine:   mounts       16        0       16 ok
+2025/03/06 18:12:47.91 vine_manager[1136664]vine:    files       10       16       26 ok
+2025/03/06 18:12:47.91 vine_manager[1136664]vine: replicas       14        0       10 leaked 4
+2025/03/06 18:12:47.91 vine_manager[1136664]vine:  workers        4        0        4 ok
+2025/03/06 18:12:47.91 vine_manager[1136664]vine: manager end

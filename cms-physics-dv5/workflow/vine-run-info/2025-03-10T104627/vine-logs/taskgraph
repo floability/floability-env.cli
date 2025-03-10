@@ -1,0 +1,33 @@
+digraph "taskvine" {
+node [style=filled,font=Helvetica,fontsize=10];
+"file-file-meta-11270a7042fce4af890d9c0b61f0aa37" [shape=rect,color=blue,label=""];
+"file-buffer-rnd-xzvfdobcdotomtv" [shape=rect,color=blue,label=""];
+"file-file-meta-7321e796ba99199d0c83155a595a4ae2" [shape=rect,color=blue,label=""];
+"file-file-rnd-cubpfmqilbtwmgm" [shape=rect,color=blue,label=""];
+"file-file-meta-17ab80836663b9acba6d79fdd249a946" [shape=rect,color=blue,label=""];
+"file-file-rnd-ekvnvssrhgpxfxa" [shape=rect,color=blue,label=""];
+"file-file-meta-5281b11297388b4cf5da2c46b8e3661e" [shape=rect,color=blue,label=""];
+"file-file-rnd-gnhepqdmjgmrdgo" [shape=rect,color=blue,label=""];
+"file-file-meta-ec174953f5c84244049cde74aec65575" [shape=rect,color=blue,label=""];
+"file-file-rnd-crqsjnlrwxycmsu" [shape=rect,color=blue,label=""];
+"task-3" [color=green,label=""];
+"file-file-meta-11270a7042fce4af890d9c0b61f0aa37" -> "task-3";
+"file-buffer-rnd-xzvfdobcdotomtv" -> "task-3";
+"file-file-meta-5281b11297388b4cf5da2c46b8e3661e" -> "task-3";
+"task-3" -> "file-file-rnd-gnhepqdmjgmrdgo";
+"task-4" [color=green,label=""];
+"file-file-meta-11270a7042fce4af890d9c0b61f0aa37" -> "task-4";
+"file-buffer-rnd-xzvfdobcdotomtv" -> "task-4";
+"file-file-meta-ec174953f5c84244049cde74aec65575" -> "task-4";
+"task-4" -> "file-file-rnd-crqsjnlrwxycmsu";
+"task-1" [color=green,label=""];
+"file-file-meta-11270a7042fce4af890d9c0b61f0aa37" -> "task-1";
+"file-buffer-rnd-xzvfdobcdotomtv" -> "task-1";
+"file-file-meta-7321e796ba99199d0c83155a595a4ae2" -> "task-1";
+"task-1" -> "file-file-rnd-cubpfmqilbtwmgm";
+"task-2" [color=green,label=""];
+"file-file-meta-11270a7042fce4af890d9c0b61f0aa37" -> "task-2";
+"file-buffer-rnd-xzvfdobcdotomtv" -> "task-2";
+"file-file-meta-17ab80836663b9acba6d79fdd249a946" -> "task-2";
+"task-2" -> "file-file-rnd-ekvnvssrhgpxfxa";
+}

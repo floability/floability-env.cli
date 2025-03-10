@@ -1,0 +1,28 @@
+
+{
+  "@graph":
+    [
+      
+      {
+        "url":
+          {
+            "@id":"http://ccl.cse.nd.edu/software/taskvine"
+          },
+        "identifier":
+          {
+            "@id":"http://ccl.cse.nd.edu/software/taskvine"
+          },
+        "name":"TaskVine",
+        "@type":"ComputerLanguage",
+        "@id":"http://ccl.cse.nd.edu/software/taskvine"
+      },
+      
+      {
+        "managerName":"floability-e47ef8c3-6c0c-40e2-907c-13b588393ef9",
+        "userId":"admin",
+        "@name":"Manager description",
+        "@id":"managerInfo"
+      }
+    ],
+  "@context":"https://w3id.org/ro/crate/1.1/context"
+}

@@ -1,0 +1,39 @@
+2025/03/10 10:35:59.09 vine_manager[1225964]tcp: listening on port 9123
+2025/03/10 15:35:59.09 vine_manager[1225964]vine: manager start
+2025/03/10 15:35:59.09 vine_manager[1225964]vine: Using default disconnect slow workers factor for 'default'.
+2025/03/10 15:35:59.09 vine_manager[1225964]vine: workers connections -- known: 0, connecting: 0
+2025/03/10 15:35:59.09 vine_manager[1225964]vine: log enabled and is being written to performance
+2025/03/10 15:35:59.09 vine_manager[1225964]vine: transactions log enabled and is being written to transactions
+2025/03/10 15:35:59.09 vine_manager[1225964]vine: graph log enabled and is being written to taskgraph
+2025/03/10 15:35:59.09 vine_manager[1225964]vine: workers connections -- known: 0, connecting: 0
+2025/03/10 15:35:59.09 vine_manager[1225964]vine: Manager is listening on port 9123.
+2025/03/10 15:35:59.10 vine_manager[1225964]vine: Task 1 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.10 vine_manager[1225964]vine: Task 2 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.11 vine_manager[1225964]vine: Task 3 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.11 vine_manager[1225964]vine: Task 4 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.11 vine_manager[1225964]vine: Task 5 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.11 vine_manager[1225964]vine: Task 6 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.11 vine_manager[1225964]vine: Task 7 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.11 vine_manager[1225964]vine: Task 8 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.11 vine_manager[1225964]vine: Task 9 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.11 vine_manager[1225964]vine: Task 10 state change: INITIAL (0) to READY (1)
+2025/03/10 15:35:59.11 vine_manager[1225964]debug: warning: this taskvine manager is visible to the public.
+2025/03/10 15:35:59.11 vine_manager[1225964]debug: warning: you should set a password with the --password option.
+2025/03/10 15:35:59.11 vine_manager[1225964]debug: warning: using plain-text when communicating with workers.
+2025/03/10 15:35:59.11 vine_manager[1225964]debug: warning: use encryption with a key and cert when creating the manager.
+2025/03/10 15:35:59.11 vine_manager[1225964]vine: Advertising manager status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2025/03/10 15:35:59.11 vine_manager[1225964]debug: compressed update message from 2136 to 808 bytes
+2025/03/10 15:35:59.11 vine_manager[1225964]dns: looking up name catalog.cse.nd.edu
+2025/03/10 15:35:59.11 vine_manager[1225964]dns: catalog.cse.nd.edu is 129.74.152.177
+2025/03/10 15:35:59.11 vine_manager[1225964]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098 (background pid 1225980)
+2025/03/10 15:35:59.11 vine_manager[1225981]debug: sending update via tcp to catalog.cse.nd.edu(129.74.152.177):9098
+2025/03/10 15:35:59.11 vine_manager[1225981]tcp: connecting to 129.74.152.177 port 9098
+2025/03/10 15:35:59.11 vine_manager[1225964]dns: looking up name backup-catalog.cse.nd.edu
+2025/03/10 15:35:59.11 vine_manager[1225964]dns: backup-catalog.cse.nd.edu is 129.74.247.43
+2025/03/10 15:35:59.11 vine_manager[1225964]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098 (background pid 1225982)
+2025/03/10 15:35:59.11 vine_manager[1225983]debug: sending update via tcp to backup-catalog.cse.nd.edu(129.74.247.43):9098
+2025/03/10 15:35:59.11 vine_manager[1225983]tcp: connecting to 129.74.247.43 port 9098
+2025/03/10 15:35:59.12 vine_manager[1225981]tcp: made connection to 129.74.152.177 port 9098
+2025/03/10 15:35:59.12 vine_manager[1225981]tcp: disconnected from 129.74.152.177 port 9098
+2025/03/10 15:35:59.12 vine_manager[1225983]tcp: made connection to 129.74.247.43 port 9098
+2025/03/10 15:35:59.12 vine_manager[1225983]tcp: disconnected from 129.74.247.43 port 9098

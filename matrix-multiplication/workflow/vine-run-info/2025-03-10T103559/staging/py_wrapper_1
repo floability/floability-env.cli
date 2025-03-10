@@ -1,0 +1,27 @@
+
+import sys
+import cloudpickle
+fn, args, out = sys.argv[1:]
+
+with open(fn, "rb") as f:
+    exec_function = cloudpickle.load(f)
+with open(args, "rb") as f:
+    args, kwargs = cloudpickle.load(f)
+
+error = 0
+try:
+    exec_out = exec_function(*args, **kwargs)
+except Exception as e:
+    exec_out = e
+    error = e
+else:
+    with open(out, "wb") as f:
+        if True:
+            cloudpickle.dump(exec_out, f)
+        else:
+            f.write(exec_out)
+finally:
+    if error:
+        import traceback
+        traceback.print_exc()
+        raise error
