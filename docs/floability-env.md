@@ -19,7 +19,4 @@ It can be run as:
 **4.**	Generates the list of dependencies of the audited notebook.  
 
 
-
-
-    
-**Acknowledgment:** The `floability-env.cli` is built based on the ideas of other existing works [FLINC](https://github.com/depaul-dice/Flinc) and [Sciunit](https://github.com/depaul-dice/sciunit). 
+Acknowledgment: The `floability-env.cli` is built based on the ideas of other existing works [FLINC](https://github.com/depaul-dice/Flinc) and [Sciunit](https://github.com/depaul-dice/sciunit). 
