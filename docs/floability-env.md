@@ -6,7 +6,7 @@ We have found that a workflow notebook (the [matrix-multiplication.ipynb](https:
 
 `floability-env.cli` runs the notebook using its own kernel. It then audits the code by trapping function calls and collects the dependency information. Finally, it generates a file named `requirements.txt` which includes the dependencies. It is also possible to separate the manager-wise dependencies and the worker-wise dependencies by using a Floability command.
 
-`floability-env.cli` can be run as follows:  
+It can be run as follows:  
 
 `./floability-env-cli.sh  --notebook {notebook_path} --kernel {kernel_name}`  
 
