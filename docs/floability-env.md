@@ -8,7 +8,7 @@ We have found that a workflow notebook (the [matrix-multiplication.ipynb](https:
 
 It can be run as:  
 
-`./floability-env-cli.sh  --notebook {notebook_path} --kernel {kernel_name}`  
+**`./floability-env-cli.sh  --notebook {notebook_path} --kernel {kernel_name}`**  
 
 
 `floability-env.cli` currently works in the following steps: 
