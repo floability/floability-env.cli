@@ -13,10 +13,10 @@ It can be run as:
 
 `floability-env.cli` currently works in the following steps: 
 
-1.	Launches the Jupyter server if not already running.
-2.	Runs the given notebook with the provided kernel.
-3.	Audits the notebook execution with FLINC on user selection.
-4.	Generates the list of dependencies of the audited notebook.
+**1.**	Launches the Jupyter server if not already running.
+**2.**	Runs the given notebook with the provided kernel.
+**3.**	Audits the notebook execution with FLINC on user selection.
+**4.**	Generates the list of dependencies of the audited notebook.
 
 
 **Acknowledgment:** The `floability-env.cli` is built based on the ideas of other existing works [FLINC](https://github.com/depaul-dice/Flinc) and [Sciunit](https://github.com/depaul-dice/sciunit). 
