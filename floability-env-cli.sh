@@ -37,7 +37,7 @@ cmd="python code_injection.py $notebook $password"
 eval "$cmd"
 
 echo "Running the notebook at path: $notebook with kernel: $kernel."
-cmd="jupyter notebook --MultiKernelManager.default_kernel_name=$kernel $notebook --no-browser --ip=0.0.0.0"
+cmd="jupyter notebook --no-browser --ip=0.0.0.0 --MultiKernelManager.default_kernel_name=$kernel $notebook"
 eval "$cmd"
 echo "Successfully completed notebook execution and auditing."
 trap - SIGINT
