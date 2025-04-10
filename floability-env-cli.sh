@@ -19,6 +19,9 @@ while [ "${1:-}" != '' ]; do
       '--kernel')
         shift
         kernel=$1 ;;
+      '--password')
+        shift
+        password=$1 ;;
       '--transform')
         shift
         transform=$1 ;;
@@ -27,10 +30,19 @@ while [ "${1:-}" != '' ]; do
     shift
 done
 
-echo "Running the notebook at path: $notebook with kernel: $kernel."
-cmd="jupyter notebook --MultiKernelManager.default_kernel_name=$kernel $notebook"
+cmd="pip3 install nbformat"
 eval "$cmd"
-echo "Successfully completed notebook execution and auditing."
-trap - SIGINT
-cmd="sciunit export e1"
+
+cmd="python code_injection.py $notebook $password"
+eval "$cmd"
+
+echo "Running the notebook at path: $notebook with kernel: $kernel."
+# cmd="jupyter notebook --MultiKernelManager.default_kernel_name=$kernel $notebook"
+# eval "$cmd"
+# echo "Successfully completed notebook execution and auditing."
+# trap - SIGINT
+# cmd="sciunit export e1"
+# eval "$cmd"
+
+cmd="python generate_requirements.py"
 eval "$cmd"
