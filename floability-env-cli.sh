@@ -37,10 +37,10 @@ cmd="python code_injection.py $notebook $password"
 eval "$cmd"
 
 echo "Running the notebook at path: $notebook with kernel: $kernel."
-# cmd="jupyter notebook --MultiKernelManager.default_kernel_name=$kernel $notebook"
-# eval "$cmd"
-# echo "Successfully completed notebook execution and auditing."
-# trap - SIGINT
+cmd="jupyter notebook --MultiKernelManager.default_kernel_name=$kernel $notebook"
+eval "$cmd"
+echo "Successfully completed notebook execution and auditing."
+trap - SIGINT
 # cmd="sciunit export e1"
 # eval "$cmd"
 
