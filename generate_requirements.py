@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 
 def process_strace_log(file_path):
     manager_packages = []
@@ -136,7 +137,10 @@ def generate_requirements_txt(manager_packages, worker_packages, output_file="re
         print(f"Error generating requirements.txt: {str(e)}")
 
 def main():
-    log_file = "strace_manager.txt"
+    if len(sys.argv) < 2:
+        print("missing required path file")
+        sys.exit(1)
+    log_file = sys.argv[1] #"iguide-gis-aging-dams/workflow/strace_manager.txt"
     manager_packages, worker_packages = process_strace_log(log_file)
     
     if manager_packages or worker_packages:

@@ -45,7 +45,7 @@ strace_cmd = [
     "-r",   
     "-z",  
     "-f",    # Follow forks/threads
-    "-o", "strace_manager.txt", 
+    "-o", "strace_manager_file", 
     "-p", str(mgr_parent_pid),
 ]
 
@@ -60,7 +60,7 @@ mgr_strace = subprocess.Popen(
 
 # Send the sudo password
 password = "dummy_password"  # Replace with your actual password
-mgr_strace.stdin.write(password.encode() + b"\n")  # Encode and add newline
+mgr_strace.stdin.write(password.encode() + b"\\n")  # Encode and add newline
 mgr_strace.stdin.flush() 
 
 print("strace is running in the background. Execute your cells now!")
@@ -102,12 +102,14 @@ except subprocess.TimeoutExpired:
 import sys
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 4:
         print("Usage: python add_cells.py <notebook_path> <sudo_password>")
         sys.exit(1)
     notebook_path = sys.argv[1]
     password = sys.argv[2]
+    path = sys.argv[3]
     # Update the password in the top_code
     top_code = top_code.replace('dummy_password', password)
+    top_code = top_code.replace('strace_manager_file', path)
     # Call the function to add cells
     add_code_cells(notebook_path, top_code, end_code)

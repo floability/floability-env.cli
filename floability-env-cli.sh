@@ -33,7 +33,7 @@ done
 cmd="pip3 install nbformat"
 eval "$cmd"
 
-cmd="python code_injection.py $notebook $password"
+cmd="python code_injection.py $notebook $password $(pwd)/strace_manager.txt"
 eval "$cmd"
 
 echo "Running the notebook at path: $notebook with kernel: $kernel."
@@ -44,5 +44,5 @@ trap - SIGINT
 # cmd="sciunit export e1"
 # eval "$cmd"
 
-cmd="python generate_requirements.py"
+cmd="python generate_requirements.py $(pwd)/strace_manager.txt"
 eval "$cmd"
