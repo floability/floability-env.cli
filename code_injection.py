@@ -68,17 +68,6 @@ print("strace is running in the background. Execute your cells now!")
 time.sleep(1)
 mgr_strace.stdin.close()
 
-from functools import wraps
-def worker(func):
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        with open('_tmp.txt', 'w') as f: 
-            f.write('hello1')
-            result = func(*args, **kwargs)
-            f.write('hello2')
-            print(result)
-            return result
-    return wrapper
 """
 
 end_code = """\
