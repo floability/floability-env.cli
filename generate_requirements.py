@@ -114,19 +114,19 @@ def main():
     worker_packages = process_strace_log(worker_log_file)
     
     if manager_packages or worker_packages:
-        print("Manager Packages:")
-        for entry in manager_packages:
-            print(f"Package: {entry['package']}")
-            print(f"Path: {entry['path']}")
-            print(f"Version: {entry['version']}")
-            print("---")
+        # print("Manager Packages:")
+        # for entry in manager_packages:
+        #     print(f"Package: {entry['package']}")
+        #     print(f"Path: {entry['path']}")
+        #     print(f"Version: {entry['version']}")
+        #     print("---")
             
-        print("Worker Packages:")
-        for entry in worker_packages:
-            print(f"Package: {entry['package']}")
-            print(f"Path: {entry['path']}")
-            print(f"Version: {entry['version']}")
-            print("---")
+        # print("Worker Packages:")
+        # for entry in worker_packages:
+        #     print(f"Package: {entry['package']}")
+        #     print(f"Path: {entry['path']}")
+        #     print(f"Version: {entry['version']}")
+        #     print("---")
         
         # Generate environment.yml
         generate_requirements_yml(manager_packages, worker_packages)
