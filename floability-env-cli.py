@@ -26,7 +26,11 @@ if args.notebook:
     notebook_path = args.notebook.strip()
 
 notebook_name = notebook_path.split("/")[-1]
-notebook_copy_path = os.getcwd()+"/copy_" + notebook_name
+notebook_path_str = '/'.join(notebook_path.split("/")[:-1])
+if notebook_path_str != "":
+	notebook_copy_path = notebook_path_str + "/copy_" + notebook_name
+else:
+	notebook_copy_path = "copy_" + notebook_name
 shutil.copy(notebook_path, notebook_copy_path)
 print("Created temp copy of the notebook: ", notebook_name)
 
@@ -50,4 +54,3 @@ print("Removed vine worker process tree.")
 # find the dependencies and geneate yaml file
 p = subprocess.Popen(['python', 'generate_requirements.py', strace_manager, strace_worker])
 p.wait()
-print("Created environment.yml")

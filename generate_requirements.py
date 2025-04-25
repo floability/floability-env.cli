@@ -26,16 +26,17 @@ def process_strace_log(file_path):
                             
                             if site_packages_idx + 2 >= len(path_parts):
                                 continue
-                            
                             package_dir = '/'.join(path_parts[:site_packages_idx + 2])
                             
-                            if package_name not in seen_manager:
+                            if package_name not in seen_manager and not package_name.startswith('_'):
+                                package_name = package_name.replace('.egg_info', '')
+                                package_name = package_name.replace('.dist-info', '')
+                                package_name = package_name.rsplit('-', 1)[0]
+                      
                                 seen_manager.add(package_name)
-                                version = find_package_version(package_dir)
                                 package_entry = {
                                     'package': package_name,
-                                    'path': package_dir,
-                                    'version': version if version else 'Not found'
+                                    'path': package_dir
                                 }
                                 manager_packages.append(package_entry)
                     except ValueError:
@@ -79,19 +80,15 @@ def find_package_version(package_dir):
         print(f"Error finding version for {package_dir}: {str(e)}")
         return None
 
-def generate_requirements_yml(manager_packages, worker_packages, output_file="environment.yml"):
+def generate_requirements_yml(manager_packages, worker_packages, output_file="requirements.yml"):
     try:
         def format_dependency(entry):
-            if entry['version'] and entry['version'] != 'Not found':
-                return f"{entry['package']}={entry['version']}"
             return entry['package']
 
-        manager_deps = sorted(list(set(format_dependency(e) for e in manager_packages)))
-        worker_deps = sorted(list(set(format_dependency(e) for e in worker_packages)))
+        manager_deps = sorted(list(set([format_dependency(x) for x in manager_packages])))
+        worker_deps = sorted(list(set([format_dependency(x) for x in worker_packages])))
 
         yml_data = {
-            'name': 'autoenv',
-            'channels': ['defaults'],
             'manager-dependencies': manager_deps,
             'worker-dependencies': worker_deps
         }
@@ -114,19 +111,6 @@ def main():
     worker_packages = process_strace_log(worker_log_file)
     
     if manager_packages or worker_packages:
-        # print("Manager Packages:")
-        # for entry in manager_packages:
-        #     print(f"Package: {entry['package']}")
-        #     print(f"Path: {entry['path']}")
-        #     print(f"Version: {entry['version']}")
-        #     print("---")
-            
-        # print("Worker Packages:")
-        # for entry in worker_packages:
-        #     print(f"Package: {entry['package']}")
-        #     print(f"Path: {entry['path']}")
-        #     print(f"Version: {entry['version']}")
-        #     print("---")
         
         # Generate environment.yml
         generate_requirements_yml(manager_packages, worker_packages)
