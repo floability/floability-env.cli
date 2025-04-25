@@ -31,6 +31,8 @@ def process_strace_log(file_path):
                             if package_name not in seen_manager and not package_name.startswith('_'):
                                 package_name = package_name.replace('.egg_info', '')
                                 package_name = package_name.replace('.dist-info', '')
+                                package_name = package_name.replace('.egg', '')
+                                
                                 package_name = package_name.rsplit('-', 1)[0]
                       
                                 seen_manager.add(package_name)
