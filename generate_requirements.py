@@ -29,11 +29,11 @@ def process_strace_log(file_path):
                             package_dir = '/'.join(path_parts[:site_packages_idx + 2])
                             
                             if package_name not in seen_manager and not package_name.startswith('_'):
-                                package_name = package_name.replace('.egg_info', '')
-                                package_name = package_name.replace('.dist-info', '')
-                                package_name = package_name.replace('.egg', '')
+                                if re.match(r'^[a-zA-Z0-9_.-]+-\d+(\.\d+)*(-py\d+(\.\d+)*)?(\.egg)$', package_name):
+                                    package_name = re.split(r'-\d+', package_name)[0]
                                 
-                                package_name = package_name.rsplit('-', 1)[0]
+                                if package_name.endswith('.egg-info') or package_name.endswith('.dist-info'):
+                                    package_name = package_name.rsplit('-', 2)[0]
                       
                                 seen_manager.add(package_name)
                                 package_entry = {
