@@ -1,0 +1,65 @@
+
+def process_strace_log(file_path, data_dep_list):
+    deps = []
+    seen = set()
+    
+    try:
+        with open(file_path, 'r') as file:
+            for line in file:
+                if 'openat' not in line:
+                    continue
+                
+                start = line.index('"') + 1
+                end = line.index('"', start)
+                full_path = line[start:end]
+                
+                # check if path is in data_dep_list
+                if not any(dep.startswith(full_path) for dep in data_dep_list):
+                    continue
+                # check if path is in seen
+                if full_path in seen:
+                    continue
+                seen.add(full_path)
+        return seen
+    except FileNotFoundError:
+        print(f"Error: File '{file_path}' not found")
+        return set()
+    except Exception as e:
+        print(f"Error processing file: {str(e)}")
+        return set()
+
+def get_list_of_files(file_path):
+    # Read the list of files from the file
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
+        lines = [line.strip() for line in lines]
+        lines = [line for line in lines if line and not line.startswith('/proc') and not line.startswith('/sys') and 'site-packages' not in line and 'vine-run-info' not in line and 'open_trace.log' not in line]
+    return lines
+
+
+import sys
+import os
+
+if __name__ == "__main__":
+    # Get the list of data dependencies from the open_trace.log file
+
+    file_path = sys.argv[1] if len(sys.argv) > 1 else 'open_trace.log'
+    if not os.path.exists(file_path):
+        print(f"Error: File '{file_path}' not found")
+        sys.exit(1)
+
+    data_dep_list = get_list_of_files('open_trace.log')
+
+    # Process the strace logs for manager and worker
+    manager_list = process_strace_log('strace_manager.txt', data_dep_list)
+    worker_set = process_strace_log('strace_worker.txt', data_dep_list)
+
+    # Write manager dependencies to a file
+    with open('manager_data_dependencies.txt', 'w') as manager_file:
+        for item in manager_list:
+            manager_file.write(f"{item}\n")
+
+    # Write worker dependencies to a file
+    with open('worker_data_dependencies.txt', 'w') as worker_file:
+        for item in worker_set:
+            worker_file.write(f"{item}\n")
