@@ -36,26 +36,13 @@ shutil.copy(notebook_path, notebook_copy_path)
 print("Created temp copy of the notebook: ", notebook_name)
 
 # add code to the top of the notebook to capture data depencies
-code_to_add = f"""
-import builtins
-import os
+# read code to add from the file
 
-log_file = "{open_trace_log}"
-if os.path.exists(log_file):
-    os.remove(log_file)
+code_to_add = ""
+with open("code_to_add.txt", "r") as f:
+    code_to_add = f.read()
+    code_to_add = code_to_add.replace("open_trace_log", open_trace_log)
 
-def open(file, mode='r', *args, **kwargs):
-    with builtins.open(log_file, "a") as log:
-        log.write(file + "\\n")
-    return builtins.open(file, mode, *args, **kwargs)
-
-original_open = builtins.open
-def traced_open(file, mode='r', *args, **kwargs):
-    with original_open(log_file, "a") as log:
-        log.write(file + "\\n")
-    return original_open(file, mode, *args, **kwargs)
-builtins.open = traced_open
-"""
 
 # use nbformat to add the code to the top of the notebook
 import nbformat
@@ -105,3 +92,11 @@ p.wait()
 # find data dependencies and generate txt file
 p = subprocess.Popen(['python', 'generate_data_dep.py', open_trace_log])
 p.wait()
+
+# generate verified yml file for worker and manager
+p = subprocess.Popen(['python', 'generate_verified_env_yaml.py', '-r', 'worker_requirements.txt', '-o', 'worker_environment.yml'])
+p.wait()
+
+p = subprocess.Popen(['python', 'generate_verified_env_yaml.py', '-r', 'manager_requirements.txt', '-o', 'manager_environment.yml'])
+p.wait()
+print("Generated verified yml files for worker and manager.")

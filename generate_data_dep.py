@@ -30,10 +30,14 @@ def process_strace_log(file_path, data_dep_list):
 
 def get_list_of_files(file_path):
     # Read the list of files from the file
+    excluded_paths = ['/proc', '/sys', 'site-packages', '/usr',  '/lib', '/lib', '/tmp', '/var']
+    excluded_paths_contains = ['site-packages', 'vine-run-info', 'open_trace.log']
     with open(file_path, 'r') as f:
         lines = f.readlines()
         lines = [line.strip() for line in lines]
-        lines = [line for line in lines if line and not line.startswith('/proc') and not line.startswith('/sys') and 'site-packages' not in line and 'vine-run-info' not in line and 'open_trace.log' not in line]
+        lines = [line for line in lines if not any(line.startswith(excluded) for excluded in excluded_paths)]
+        lines = [line for line in lines if not any(excluded in line for excluded in excluded_paths_contains)]
+
     return lines
 
 

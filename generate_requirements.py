@@ -36,9 +36,11 @@ def process_strace_log(file_path):
                                     package_name = package_name.rsplit('-', 2)[0]
                       
                                 seen_manager.add(package_name)
+                                version = find_package_version(package_dir)
                                 package_entry = {
                                     'package': package_name,
-                                    'path': package_dir
+                                    'path': package_dir,
+                                    'version': version if version else 'Not found'
                                 }
                                 manager_packages.append(package_entry)
                     except ValueError:
@@ -103,6 +105,30 @@ def generate_requirements_yml(manager_packages, worker_packages, output_file="re
     except Exception as e:
         print(f"Error generating {output_file}: {str(e)}")
 
+def generate_requirements_txt(manager_packages, worker_packages, output_worker_file="worker_requirements.txt", output_manager_file="manager_requirements.txt"):
+    try:
+        def format_dependency(entry):
+            return entry['package'] + '==' + entry['version'] if entry['version'] is not None else entry['package']
+
+        manager_deps = sorted(list(set([format_dependency(x) for x in manager_packages])))
+        worker_deps = sorted(list(set([format_dependency(x) for x in worker_packages])))
+
+        with open(output_manager_file, 'w') as f:
+            f.write("# Manager dependencies\n")
+            for dep in manager_deps:
+                f.write(f"{dep}\n")
+        print(f"Generated {output_manager_file} successfully")
+        
+        with open(output_worker_file, 'w') as f:
+            f.write("\n# Worker dependencies\n")
+            for dep in worker_deps:
+                f.write(f"{dep}\n")
+
+        print(f"Generated {output_worker_file} successfully")
+
+    except Exception as e:
+        print(f"Error generating requirements file: {str(e)}")
+
 def main():
     if len(sys.argv) < 3:
         print("missing required path file")
@@ -114,8 +140,10 @@ def main():
     
     if manager_packages or worker_packages:
         
-        # Generate environment.yml
-        generate_requirements_yml(manager_packages, worker_packages)
+        # generate requirements
+        generate_requirements_txt(manager_packages, worker_packages)
+        
+        
     else:
         print("No packages found or error occurred")
 
