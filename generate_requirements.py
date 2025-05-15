@@ -40,7 +40,7 @@ def process_strace_log(file_path):
                                 package_entry = {
                                     'package': package_name,
                                     'path': package_dir,
-                                    'version': version if version else 'Not found'
+                                    'version': version if version else None
                                 }
                                 manager_packages.append(package_entry)
                     except ValueError:
@@ -108,7 +108,7 @@ def generate_requirements_yml(manager_packages, worker_packages, output_file="re
 def generate_requirements_txt(manager_packages, worker_packages, output_worker_file="worker_requirements.txt", output_manager_file="manager_requirements.txt"):
     try:
         def format_dependency(entry):
-            return entry['package'] + '==' + entry['version'] if entry['version'] is not None else entry['package']
+            return entry['package'] + '==' + entry['version'] if entry['version'] else entry['package']
 
         manager_deps = sorted(list(set([format_dependency(x) for x in manager_packages])))
         worker_deps = sorted(list(set([format_dependency(x) for x in worker_packages])))
