@@ -41,9 +41,7 @@ def get_list_of_files(file_path):
         lines = [line.strip() for line in lines]
         lines = [line for line in lines if not any(line.startswith(excluded) for excluded in excluded_paths)]
         lines = [line for line in lines if not any(excluded in line for excluded in excluded_paths_contains)]
-    for line in lines:        
-        print(line)
-
+    
     return lines
 
 
