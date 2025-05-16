@@ -21,6 +21,8 @@ def get_parsed_arguments():
 strace_worker = os.getcwd()+"/strace_worker.txt"
 strace_manager = os.getcwd()+"/strace_manager.txt"
 open_trace_log = os.getcwd()+"/open_trace.log"
+start_file = os.getcwd()+"/7ffdc7bb937.txt"
+end_file = os.getcwd()+"/89101756618.txt"
 
 args = get_parsed_arguments()
 if args.notebook:
@@ -42,6 +44,8 @@ code_to_add = ""
 with open("code_to_add.txt", "r") as f:
     code_to_add = f.read()
     code_to_add = code_to_add.replace("open_trace_log", open_trace_log)
+    code_to_add = code_to_add.replace("start_file", start_file)
+    code_to_add = code_to_add.replace("end_file", end_file)
 
 
 # use nbformat to add the code to the top of the notebook
@@ -91,6 +95,10 @@ p.wait()
 
 # find data dependencies and generate txt file
 p = subprocess.Popen(['python', 'generate_data_dep.py', open_trace_log])
+p.wait()
+
+# find cell level dependencies and generate yml file
+p = subprocess.Popen(['python', 'generate_cell_level_dependencies.py', strace_manager, notebook_name])
 p.wait()
 
 # generate verified yml file for worker and manager

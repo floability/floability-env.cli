@@ -15,6 +15,19 @@ def open(file, mode='r', *args, **kwargs):
 original_open = builtins.open
 def traced_open(file, mode='r', *args, **kwargs):
     with original_open(log_file, "a") as log:
+        if isinstance(file, os.PathLike):
+            file = os.fspath(file)
         log.write(file + "\n")
     return original_open(file, mode, *args, **kwargs)
 builtins.open = traced_open
+
+def pre_run_cell(*args, **kwargs):
+    with open('start_file', 'w') as f:
+        f.write('starting with 7ffdc7bb937')
+
+def post_run_cell(*args, **kwargs):
+    with open('end_file', 'w') as f:
+        f.write('ending with 89101756618')
+    
+get_ipython().events.register('pre_run_cell', pre_run_cell)
+get_ipython().events.register('post_run_cell', post_run_cell)
