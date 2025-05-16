@@ -11,10 +11,10 @@ def process_strace_log(file_path, data_dep_list):
                 
                 start = line.index('"') + 1
                 end = line.index('"', start)
-                full_path = line[start:end]
+                full_path = line[start:end].strip()
                 
                 # check if path is in data_dep_list
-                if not any(dep.startswith(full_path) for dep in data_dep_list):
+                if not any(dep == full_path for dep in data_dep_list):
                     continue
                 # check if path is in seen
                 if full_path in seen:
@@ -30,13 +30,15 @@ def process_strace_log(file_path, data_dep_list):
 
 def get_list_of_files(file_path):
     # Read the list of files from the file
-    excluded_paths = ['/proc', '/sys', 'site-packages', '/usr',  '/lib', '/opt', '/tmp', '/var', '/etc']
-    excluded_paths_contains = ['site-packages', 'vine-run-info', 'open_trace.log']
+    excluded_paths = ['/proc', '/sys', '/usr',  '/lib', '/opt', '/tmp', '/var', '/etc']
+    excluded_paths_contains = ['/site-packages', '/vine-run-info', '/open_trace.log', '/dask']
     with open(file_path, 'r') as f:
         lines = f.readlines()
         lines = [line.strip() for line in lines]
         lines = [line for line in lines if not any(line.startswith(excluded) for excluded in excluded_paths)]
         lines = [line for line in lines if not any(excluded in line for excluded in excluded_paths_contains)]
+    for line in lines:        
+        print(line)
 
     return lines
 
