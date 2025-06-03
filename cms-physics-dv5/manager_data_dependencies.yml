@@ -1,0 +1,9 @@
+data_dependencies:
+- name: data/samples_ready.json
+  size: 1559
+- name: data/triggers.json
+  size: 101
+- name: /home/admin/Talha/floability-env.cli/cms-physics-dv5/workflow/data/samples/diboson/zz/nano_mc2017_9.root
+  size: 197426
+- name: /home/admin/Talha/floability-env.cli/cms-physics-dv5/workflow/data/samples/qcd/800to1000/nano_mc2017_2-35.root
+  size: 279977

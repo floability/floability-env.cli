@@ -1,0 +1,7 @@
+data_dependencies:
+- name: npp.jpg
+  size: 17224423
+- name: npp_sharpen.jpg
+  size: 0
+- name: /home/admin/.cache/matplotlib/fontlist-v390.json
+  size: 187468

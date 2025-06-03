@@ -1,0 +1,11 @@
+data_dependencies:
+- name: /dev/null
+  size: 4096
+- name: /home/admin/.cache/matplotlib/fontlist-v390.json
+  size: 187468
+- name: ../data/csv_index.json
+  size: 23372917
+- name: /home/admin/Talha/floability-env.cli/floability-examples/climate_trend/workflow/runinfo/034/parsl.log
+  size: 0
+- name: annual_trends_large.csv
+  size: 3148

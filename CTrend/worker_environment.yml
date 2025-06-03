@@ -1,0 +1,59 @@
+name: reconstructed-env
+channels:
+- conda-forge
+- defaults
+dependencies:
+- conda-forge::cloudpickle==3.1.1
+- conda-forge::conda-pack==0.8.1
+- conda-forge::fonttools==4.58.0
+- conda-forge::markdown-it-py==3.0.0
+- conda-forge::ndcctools==7.15.3
+- conda-forge::numpy==2.2.6
+- conda-forge::pandas==2.2.3
+- conda-forge::pip==25.1.1
+- conda-forge::pygments==2.19.1
+- conda-forge::pytz==2025.2
+- conda-forge::scipy==1.15.2
+- conda-forge::setuptools==80.8.0
+- conda-forge::tqdm==4.67.1
+- conda-forge::wheel==0.45.1
+- pip==25.1.1
+- python==3.11.12
+- pip:
+  - anyio==4.9.0
+  - babel==2.17.0
+  - certifi==2025.4.26
+  - cffi==1.17.1
+  - charset-normalizer==3.4.2
+  - debugpy==1.8.14
+  - dill==0.4.0
+  - filelock==3.18.0
+  - httpx==0.28.1
+  - idna==3.10
+  - ipython-pygments-lexers==1.1.1
+  - ipython==9.2.0
+  - jinja2==3.1.6
+  - json5==0.12.0
+  - jsonschema==4.23.0
+  - jupyter-client==8.6.3
+  - jupyter-console==6.6.3
+  - jupyter-core==5.7.2
+  - jupyter-events==0.12.0
+  - jupyter-lsp==2.2.5
+  - jupyter-server==2.16.0
+  - jupyterlab==4.4.2
+  - matplotlib-inline==0.1.7
+  - nbclient==0.10.2
+  - nbconvert==7.16.6
+  - nbformat==5.10.4
+  - notebook==7.4.2
+  - parsl==2025.5.19
+  - psutil==7.0.0
+  - requests==2.32.3
+  - send2trash==1.8.3
+  - setproctitle==1.3.6
+  - tblib==3.1.0
+  - typeguard==4.4.2
+  - urllib3==2.4.0
+  - webcolors==24.11.1
+  - websocket-client==1.8.0
